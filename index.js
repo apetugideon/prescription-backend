@@ -47,7 +47,7 @@ app.use('/api/verifications', cors(), verificationsRoute);
 
 
 //Reminder Schedule
-cron.schedule("* * * * *", function() {
+cron.schedule("* * * *", function() {
     reminder.sendReminder();
 });
 
