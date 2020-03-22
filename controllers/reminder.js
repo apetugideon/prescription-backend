@@ -14,8 +14,8 @@ const fetchPlacement = () => {
     let transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-            user: "apetugideon@gmail.com",
-            pass: "Adisababa2$"
+            user: "your_gmail_address",
+            pass: "your_gmail_password"
         }
     });
 

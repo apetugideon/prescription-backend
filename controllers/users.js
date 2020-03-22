@@ -63,6 +63,8 @@ module.exports.getUser = (req, res, next) => {
     User.findAll({
         where : { email: req.body.email }
     }).then((user) => {
+        //console.log(user);
+        
         if (Utils.notEmptyArray(user)) {    
             bcrypt.compare(req.body.password, user[0].dataValues.password)
             .then((valid) => {
