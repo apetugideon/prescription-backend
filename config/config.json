@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "Adisababa2$",
-    "database": "prescriptiondbdrug",
+    "password": "",
+    "database": "",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
@@ -16,10 +16,10 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "b8d37f3291ea99",
-    "password": "083eb055",
-    "database": "heroku_527e4705fc629e1",
-    "host": "us-cdbr-iron-east-04.cleardb.net",
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
     "dialect": "mysql",
     "operatorsAliases": false 
   }
