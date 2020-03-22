@@ -1,0 +1,12 @@
+npx sequelize init
+npx sequelize db:migrate
+
+
+npx sequelize migration:create --name users
+
+npx sequelize model:create --name User --attributes names:string,email:string,phoneNum:string,profilePicture:string,createdBy:integer,modifiedBy:integer
+npx sequelize model:create --name Ailment --attributes names:string,description:string,symptons:string,relatedPictures:string,createdBy:integer,modifiedBy:integer
+npx sequelize model:create --name Prescription --attributes names:string,description:string,ailmentId:integer,createdBy:integer,modifiedBy:integer
+npx sequelize model:create --name Formula --attributes names:string,description:string,prescriptionId:integer,usageTime:string,dosage:integer,createdBy:integer,modifiedBy:integer
+npx sequelize model:create --name Placement --attributes names:string,userId:integer,ailmentId:integer,startDate:dateonly,endDate:dateonly,status:boolean,createdBy:integer,modifiedBy:integer
+npx sequelize model:create --name Verification --attributes placementId:integer,formulaId:integer,prescriptionId:integer,ailmentId:integer,status:char,createdBy:integer,modifiedBy:integer
